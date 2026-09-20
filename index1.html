@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sai Prasad - Portfolio</title>
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+
+/* Navigation */
+
+header {
+    width: 100%;
+    background: #111;
+    padding: 20px 8%;
+    position: fixed;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    font-size: 28px;
+}
+
+nav h2 span {
+    color: #00bfff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #00bfff;
+}
+
+
+/* Common Section */
+
+section {
+    min-height: 100vh;
+    padding: 100px 8%;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+
+/* Home */
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h3 {
+    font-size: 25px;
+}
+
+.home-content h1 {
+    font-size: 60px;
+    color: #00bfff;
+    margin: 10px 0;
+}
+
+.home-content h2 {
+    font-size: 28px;
+}
+
+.home-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Profile */
+
+.profile img {
+    width: 400px;
+    height: 450px;
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #00bfff;
+    padding: 5px;
+    box-shadow: 0 0 25px #00bfff;
+}
+
+
+/* About */
+
+.about {
+    max-width: 800px;
+    margin: auto;
+
+    background: #1c1c1c;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    text-align: center;
+    border: 5px solid #00bfff;
+    padding: 15px;
+    box-shadow: 0 0 25px #00bfff;
+}
+
+.about p {
+    font-size: 19px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+
+/* Skills */
+
+.skills {
+    max-width: 900px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+    
+}
+
+.skills div {
+    background: #1c1c1c;
+
+    padding: 30px 10px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    border: 1px solid #333;
+
+    border: 2px solid #00bfff;
+    padding: 35px;
+    margin: 10px;
+    box-shadow: 0 0 15px #00bfff;
+}
+
+.skills div:hover {
+    border-color: #00bfff;
+    box-shadow: 0 0 25px #09a0f1;
+}
+
+/* Hobbies */
+
+.hobi {
+    max-width: 900px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.hobi div {
+    background: #1c1c1c;
+
+    padding: 30px 10px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    border: 1px solid #333;
+    margin: 10px;
+
+    border: 2px solid #00bfff;
+    padding: 35px;
+    box-shadow: 0 0 15px #00bfff;
+}
+
+.hobi div:hover {
+     border-color: #00bfff;
+    box-shadow: 0 0 25px #09a0f1;
+}
+
+
+/* Arts Section */
+
+#arts {
+    background: #111;
+}
+
+.arts-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.art-card {
+    background: #1c1c1c;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    border: 1px solid #333;
+
+    transition: 0.4s;
+    border: 2px solid #00bfff;
+    padding: 5px;
+    margin: 5px;
+    box-shadow: 0 0 15px #00bfff;
+
+
+}
+
+.art-card img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.4s;
+}
+
+/* Hover Effect */
+
+.art-card:hover {
+    transform: translateY(-10px);
+
+    border-color: #00bfff;
+
+    box-shadow: 0 0 20px #00bfff;
+}
+
+.art-card:hover img {
+    transform: scale(1.08);
+}
+
+
+/* Contact */
+
+.contact {
+    max-width: 600px;
+
+    margin: auto;
+
+    background: #1c1c1c;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    text-align: center;
+    border: 2px solid #00bfff;
+    padding: 5px;
+    
+    box-shadow: 0 0 15px #00bfff;
+
+}
+
+.contact p {
+    margin: 20px;
+    font-size: 18px;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    background: #080808;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+}
+</style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <h2>Portfolio</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#hobi">Hobbies</a></li>
+                <li><a href="#arts">Arts</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+
+        <div class="home-content">
+            <h3>Hello, I'm</h3>
+
+            <h1>Sai Prasad</h1>
+
+            <h2>Graphic Designer & UI/UX Designer</h2>
+
+            <p>
+                I create creative designs and user-friendly digital experiences.
+            </p>
+        </div>
+
+        <div class="profile">
+            <img src="D:\myprograms\photos\prasad3.png" alt="Sai Prasad">
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about">
+
+        <h1 class="title">About Me</h1>
+
+        <div class="about">
+            <p>
+                Hi, I'm Sayiprasad Acharya. BCA Student
+             at SDM Degree College Ujire. I'm pencil sketch artist and UI/UX Designer.
+             and web Developer I specialize in HTML, CSS and Javascript and Figma, Canva.
+             I love Creating creative, interactive and visually attractive websites and 
+             I enjoy creating realistic pencil artworks and Paintings. 
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills">
+
+        <h1 class="title">My Skills</h1>
+
+        <div class="skills">
+
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>Figma</div>
+            <div>Canva</div>
+
+            <div>Graphic Design</div>
+            <div>UI/UX Design</div>
+            <div>Photoshop</div>
+            <div>Web Design</div>
+
+        </div>
+
+    </section>
+
+    <!-- hobbies Section -->
+    <section id="hobi">
+
+        <h1 class="title">My Hobbies</h1>
+
+        <div class="hobi">
+
+            <div>Drawing</div>
+            <div>Painting</div>
+            <div>Gaming</div>
+            
+
+            <div>Agriculture</div>
+            <div>Designing</div>
+            <div>Music</div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Arts Section -->
+<section id="arts">
+
+    <h1 class="title">My Arts</h1>
+
+    <div class="arts-container">
+
+        <div class="art-card">
+            <img src="./photos/art1.jpeg" alt="Pencil Sketch">
+        </div>
+
+        <div class="art-card">
+            <img src="./photos/art2.jpeg" alt="Portrait Drawing">
+        </div>
+
+        <div class="art-card">
+            <img src="./photos/art6.jpeg" alt="Creative Art">
+        </div>
+
+        <div class="art-card">
+            <img src="./photos/art7.jpeg" alt="Digital Art">
+        </div>
+
+        <div class="art-card">
+            <img src="./photos/art8.jpeg" alt="Digital Art">
+        </div>
+
+        <div class="art-card">
+            <img src="./photos/art9.jpeg" alt="Digital Art">
+        </div>
+
+        <div class="art-card">
+            <img src="./photos/art10.jpeg" alt="Digital Art">
+        </div>
+
+        <div class="art-card">
+            <img src="./photos/art12.jpeg" alt="Digital Art">
+        </div>
+
+        <div class="art-card">
+            <img src="./photos/art13.jpeg" alt="Digital Art">
+        </div>
+
+        <div class="art-card">
+            <img src="./photos/art14.jpeg" alt="Digital Art">
+        </div>
+
+        <div class="art-card">
+            <img src="./photos/art5.jpeg" alt="Digital Art">
+        </div>
+
+        <div class="art-card">
+            <img src="./photos/art3.jpeg" alt="Digital Art">
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+
+        <h1 class="title">Contact Me</h1>
+
+        <div class="contact">
+
+            <p>Email: sai@gmail.com</p>
+
+            <p>Phone: +91 XXXXX XXXXX</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 SAI_ARTS</p>
+    </footer>
+
+</body>
+</html>
